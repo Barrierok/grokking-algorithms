@@ -2,11 +2,11 @@
 ## Setup
 
 ```sh
-$ make install
+$ npm ci
 ```
 
 ## Run tests
 
 ```sh
-$ make test
+$ npm test
 ```
