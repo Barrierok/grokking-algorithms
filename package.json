@@ -1,37 +1,38 @@
 {
   "name": "@hexlet/nodejs-package",
   "version": "0.0.3",
-  "description": "Node.js boilerplate package",
+  "description": "Solving tasks from the book",
   "bin": {
-    "hexlet": "bin/nodejs-package.js"
+    "grokking": "bin/grokking.js"
   },
   "engines": {
     "node": ">=14"
   },
   "scripts": {
-    "test": "npx -n --experimental-vm-modules jest"
+    "test": "npx -n --experimental-vm-modules jest",
+    "lint": "npx eslint .",
+    "test-coverage": "npm test -- --coverage --coverageProvider=v8"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hexlet-boilerplates/nodejs-package.git"
+    "url": "git+https://github.com/Barrierok/grokking-algorithms"
   },
-  "author": "Kirill Mokevnin",
+  "author": "Ilya Zubtsov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hexlet-boilerplates/nodejs-package/issues"
+    "url": "https://github.com/Barrierok/grokking-algorithms/issues"
   },
   "type": "module",
   "jest": {
     "testEnvironment": "node",
     "transform": {}
   },
-  "homepage": "https://github.com/hexlet-boilerplates/nodejs-package#readme",
+  "homepage": "https://github.com/Barrierok/grokking-algorithms#readme",
   "dependencies": {
     "@jest/globals": "^26.1.0",
     "lodash": "^4.17.19"
   },
   "devDependencies": {
-    "debug": "^4.1.1",
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",

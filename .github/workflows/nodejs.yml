@@ -29,17 +29,10 @@ jobs:
         # The Node.js version to configure
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm install, build
-        # Install and build project
-        run: |
-          make install
-        # Add environment variables
-        env:
-          CI: true
+      - name: Install deps
+        run: npm ci
       - name: Run linter
-        # Run Linter
-        run: |
-          make lint
+        run: npm run lint
       - name: Test & publish code coverage
         # Publish code coverage on Code Climate
         # https://github.com/paambaati/codeclimate-action
@@ -48,5 +41,5 @@ jobs:
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
-          coverageCommand: make test-coverage
+          coverageCommand: npm run test-coverage
           debug: true
