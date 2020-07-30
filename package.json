@@ -27,6 +27,7 @@
   "homepage": "https://github.com/Barrierok/grokking-algorithms#readme",
   "dependencies": {
     "@jest/globals": "^26.1.0",
+    "@types/jest": "^26.0.7",
     "lodash": "^4.17.19"
   },
   "devDependencies": {
