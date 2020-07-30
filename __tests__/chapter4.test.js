@@ -14,6 +14,6 @@ test('Recursive count', () => {
 });
 
 test('Recursive finder biggest digit', () => {
-  expect(recFinder([1, 5, 2, 6])).toBe(6);
+  expect(recFinder([1, 5, 2, 6, 1, 2, 3])).toBe(6);
   expect(recFinder([5])).toBe(5);
 });
