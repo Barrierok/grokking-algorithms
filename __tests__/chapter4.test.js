@@ -1,6 +1,7 @@
 import { recSum } from '../src/chapter4/recSum';
 import { recCount } from '../src/chapter4/recCount';
 import { recFinder } from '../src/chapter4/recFinder';
+import { quickSort } from '../src/chapter4/quickSort';
 
 test('Recursive summ', () => {
   expect(recSum([5, 5, 70])).toBe(80);
@@ -16,4 +17,10 @@ test('Recursive count', () => {
 test('Recursive finder biggest digit', () => {
   expect(recFinder([1, 5, 2, 6, 1, 2, 3])).toBe(6);
   expect(recFinder([5])).toBe(5);
+});
+
+test('Quick sort', () => {
+  expect(quickSort([1, 4, 0])).toEqual([0, 1, 4]);
+  expect(quickSort([9, 8, 7, 6, 5, 4])).toEqual([4, 5, 6, 7, 8, 9]);
+  expect(quickSort([])).toEqual([]);
 });
