@@ -1,4 +1,4 @@
-import { searchInDeep } from '../src/chapter5/searchInDeep';
+import { searchInDeep } from '../src/chapter6/searchInDeep';
 
 test('Search in deep', () => {
   const graph = {
