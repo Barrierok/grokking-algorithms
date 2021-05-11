@@ -28,7 +28,7 @@
   "dependencies": {
     "@jest/globals": "^26.1.0",
     "@types/jest": "^26.0.7",
-    "lodash": "^4.17.19"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "eslint": "^7.4.0",
